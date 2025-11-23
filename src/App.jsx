@@ -3,43 +3,42 @@ import React, { useState } from "react";
 const profile = {
   name: "Akash V",
   title: "Software Developer",
-  location: "Kerala, India",
+  location: "Alappuzha,Kerala, India",
   bio: `I build reliable, maintainable web applications using HTML,CSS,JS and PHP&MySQL. I like C/C++ for systems-level work and enjoy solving algorithmic challenges. Currently focused on web development and backend engineering.`,
   email: "akashak2004ak@gmail.com",
   github: "https://github.com/akashv200",
   linkedin: "https://www.linkedin.com/in/akash-v-97072b26b",
-  resume: "#"
+  resume: "/my-portfolio/resume.pdf"
 };
 
 const skills = [
   "JavaScript (ES6+)",
-  "React / Next.js",
-  "Node.js / Express",
+  "Linux",
   "PHP & MySQL",
   "C / C++",
   "HTML & CSS / Tailwind",
   "Git & GitHub",
-  "REST APIs",
+  
 ];
 
 const projects = [
   {
-    title: "Spice Auction (PHP + MySQL)",
-    desc: "Converted a Django-based auction site to PHP & MySQL, implemented authentication, bidding flows, and admin dashboard.",
-    tech: ["PHP", "MySQL", "Bootstrap"],
-    link: "https://github.com/yourusername/spice-auction",
+    title: "College Fest Page",
+    desc: "Designed using HTML,CSS,JS and Hosted using GitHub",
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://akashv200.github.io/fest/",
   },
   {
     title: "Patient Registration Portal",
-    desc: "Built a patient registration system with email OTP verification and dynamic UX for verification flow.",
-    tech: ["PHP", "JavaScript", "SMTP"],
-    link: "https://github.com/yourusername/patient-portal",
+    desc: "Combined with EyeCare Website.It contains Email OTP feature",
+    tech: ["PHP", "PHPMAILER", "SMTP"],
+    link: "https://github.com/akashv200/EYE-CARE-Mini-Project-",
   },
   {
     title: "Eye Care Website",
-    desc: "Frontend and backend for an eye care clinic, appointment booking and patient management.",
-    tech: ["React", "Node.js", "MongoDB"],
-    link: "#",
+    desc: "Frontend and backend for an eye care clinic, appointment booking and patient management.NOT HOSTED",
+    tech: ["PHP", "MYSQL", "HTML"],
+    link: "https://github.com/akashv200/EYE-CARE-Mini-Project-",
   },
 ];
 
@@ -143,9 +142,13 @@ export default function App() {
           <aside className="lg:col-span-1">
             <div className="sticky top-8 bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-800/50 shadow-xl">
               <div className="flex flex-col items-center text-center">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-purple-600 via-indigo-600 to-purple-600 flex items-center justify-center text-3xl font-bold text-white shadow-2xl shadow-purple-500/30">
-                  AV
-                </div>
+              <div className="w-32 h-32 rounded-full overflow-hidden shadow-2xl shadow-purple-500/30 ring-4 ring-purple-500/20">
+     <img 
+    src="/my-portfolio/profile.jpg" 
+    alt="Akash V" 
+    className="w-full h-full object-cover"
+  />
+</div>
                 <h2 className="mt-6 text-2xl font-semibold">{profile.name}</h2>
                 <p className="text-sm text-purple-400 mt-1">{profile.title}</p>
                 <p className="text-sm text-gray-400 mt-4 leading-relaxed">{profile.bio}</p>
