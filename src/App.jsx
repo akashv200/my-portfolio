@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 const profile = {
   name: "Akash V",
-  title: "Full-Stack Developer",
+  title: "Software Developer",
   location: "Kerala, India",
-  bio: `I build reliable, maintainable web applications using modern JavaScript stacks. I like C/C++ for systems-level work and enjoy solving algorithmic challenges. Currently focused on web development and backend engineering.`,
+  bio: `I build reliable, maintainable web applications using HTML,CSS,JS and PHP&MySQL. I like C/C++ for systems-level work and enjoy solving algorithmic challenges. Currently focused on web development and backend engineering.`,
   email: "akashak2004ak@gmail.com",
-  github: "https://github.com/yourusername",
+  github: "https://github.com/akashv200",
   linkedin: "https://www.linkedin.com/in/akash-v-97072b26b",
   resume: "#"
 };
